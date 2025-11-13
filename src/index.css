@@ -1,0 +1,67 @@
+@import 'tailwindcss';
+@config '../tailwind.config.js';
+@theme {
+  --primary: #0B6B3F;
+  --secondary: #2E8B57;
+  --accent: #ECF9F2;
+  --darkText: #073725;
+  --lightText: #143a2b;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #FFFFFF;
+  color: #073725;
+}
+
+/* Custom styles for Green Box */
+.rounded-lg {
+  border-radius: 14px;
+}
+
+.rounded-xl {
+  border-radius: 18px;
+}
+
+.rounded-2xl {
+  border-radius: 20px;
+}
+
+.shadow-soft {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.btn-primary {
+  background-color: var(--secondary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #257046;
+}
+
+.btn-add {
+  background-color: var(--secondary);
+  color: white;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-add:hover {
+  background-color: #257046;
+}
